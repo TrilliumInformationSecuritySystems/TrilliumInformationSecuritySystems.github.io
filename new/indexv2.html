@@ -150,8 +150,7 @@ a {
 	margin-left: -50px;
 	background: #ffffff;
 	height: 80px;
-	border-bottom: 5px solid red;
-	box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+	
 }		
 #tabs::before {
 	content: "";
@@ -160,7 +159,7 @@ a {
 	z-index: -100;
 	width: 100%;
 	left: 0;
-	margin-top: 16px;
+	margin-top: 5px;
 	height: 80px;
 	background: #2B2A28;
 	border-bottom: 5px solid red;
@@ -241,8 +240,7 @@ a {
 	width: 0;
 	height: 0;
 	margin-left: -50px;
-	border-top: 8px solid #000;
-	border-right: 10px solid #000;
+
 	border-left: 10px solid transparent;
 	border-bottom: 8px solid transparent;
 }
@@ -276,7 +274,7 @@ margin:2%
 
 </style>
    </head>
-   <body class="site com-sppagebuilder view-page no-layout no-task itemid-437 en-gb ltr  layout-fluid off-canvas-menu-init">
+   <body class="site com-sppagebuilder view-page no-layout no-task itemid-437 en-gb ltr  layout-fluid off-canvas-menu-init" onload="document.getElementById('content').style.height = '400';">
       <div class="body-wrapper">
          <div class="body-innerwrapper">
             <section id="sp-top-bar" class="hidden hidden-xs hidden-sm hidden-md">
@@ -1095,10 +1093,10 @@ function enableAutoplay() {
 																
 																
 																
-																<input id="radio1" type="radio" name="css-tabs" checked>
-																<input id="radio2" type="radio" name="css-tabs">
-																<input id="radio3" type="radio" name="css-tabs">
-																<input id="radio4" type="radio" name="css-tabs">
+																<input id="radio1" type="radio" name="css-tabs" checked >
+																<input id="radio2" type="radio" name="css-tabs" onclick="document.getElementById('content').style.height = '820';">
+																<input id="radio3" type="radio" name="css-tabs" onclick="document.getElementById('content').style.height = '650';">
+																<input id="radio4" type="radio" name="css-tabs"  onclick="document.getElementById('content').style.height = '600';">
 																<div id="tabs">
 																	<label id="tab1" for="radio1">Predict</label>
 																	<label id="tab2" for="radio2">Prevent</label>
@@ -1663,7 +1661,7 @@ function enableAutoplay() {
                                              </div>
                                           </div>
                                        </div>
-									                                          <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
+									                                          <div class="sppb-col-md-4" id="column-wrap-id-1489319341527" style="margin-top:30px">
                                           <div id="column-id-1489319341527" class="sppb-column rounded">
                                              <div class="sppb-column-addons">
                                                 <div id="sppb-addon-wrapper-1489319341549" class="sppb-addon-wrapper">
