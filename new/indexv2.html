@@ -132,14 +132,14 @@ body {
   font-family: "Open Sans", "Arial";
 }
 main {
-  max-width: 800px;
-  margin: 30px auto;
+	max-width: 800px;
+	margin: 30px auto;
 	background: #3F3F3D;
 	padding: 30px;
 	box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 }
 input[name=css-tabs] {
-  display: none;
+	display: none;
 }
 a {
 	color: #F29A77;
@@ -147,10 +147,9 @@ a {
 #tabs {
 	padding: 0 0 0 0px;
 	width: calc(100%);
-	margin-left: 0px; 
+	margin-left: 0px;
 	background: #ffffff;
 	height: 80px;
-	
 }		
 #tabs::before {
 	content: "";
@@ -202,16 +201,16 @@ a {
 	margin: 10px auto;
 }
 #tab1::before {
-	background-image: url(Predicticons.png);
+	background-image: url(brands/Predict-red.png);
 }
 #tab2::before {
-	background-image: url(Preventicons.png);
+	background-image: url(brands/Prevent-red.png);
 }
 #tab3::before {
-	background-image: url(Respondicons.png);
+	background-image: url(brands/Respond-red.png);
 }
 #tab4::before {
-	background-image: url(Detecticons.png);
+	background-image: url(brands/Detect-red.png);
 }
 #radio1:checked ~ #tabs #tab1::before, #radio2:checked ~ #tabs #tab2::before, #radio3:checked ~ #tabs #tab3::before, #radio4:checked ~ #tabs #tab4::before {
 	filter: invert(100%);
