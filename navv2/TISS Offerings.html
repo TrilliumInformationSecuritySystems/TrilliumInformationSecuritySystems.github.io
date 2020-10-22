@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)file:///F:/TrilliumInformationSecuritySystems.github.io/nav/indexbkpv2.html#!/ -->
+<html lang="en" ng-app="attackApp" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+        
+        
+        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <!--<base href="/">-->
+        <!--<base href=".">--><base href=".">
+        <link rel="shortcut icon" href="https://infosecurity.com.pk/templates/jux_one/favicon.ico" type="image/x-icon">
+        <title>TISS Offerings</title>
+        
+        <link href="./TISS Offerings_files/app.css" rel="stylesheet">
+        <script type="text/javascript" async="" src="./TISS Offerings_files/qfryyyst"></script><script type="text/javascript" async="" src="./TISS Offerings_files/analytics.js.download"></script><script async="" src="./TISS Offerings_files/hotjar-1759429.js.download"></script><script async="" src="./TISS Offerings_files/modules.aba0ecfabdef708986ad.js.download" charset="utf-8"></script>
+         <style type="text/css">.backpack.dropzone {
+            font-family: 'SF UI Display', 'Segoe UI';
+            font-size: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 150px;
+            font-weight: lighter;
+            color: white;
+            will-change: right;
+            z-index: 2147483647;
+            bottom: 20%;
+            background: #333;
+            position: fixed;
+            user-select: none;
+            transition: left .5s, right .5s;
+            right: 0px; }
+            .backpack.dropzone .animation {
+            height: 80px;
+            width: 250px;
+            background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+            .backpack.dropzone .title::before {
+            content: 'Save to'; }
+            .backpack.dropzone.closed {
+            right: -250px; }
+            .backpack.dropzone.hover .animation {
+            animation: sxt-play-anim-hover 0.91s steps(21);
+            animation-fill-mode: forwards;
+            background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+            @keyframes sxt-play-anim-hover {
+            from {
+            background-position: 0px; }
+            to {
+            background-position: -5250px; } }
+            .backpack.dropzone.saving .title::before {
+            content: 'Saving to'; }
+            .backpack.dropzone.saving .animation {
+            background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saving_loop.png") left center;
+            animation: sxt-play-anim-saving steps(59) 2.46s infinite; }
+            @keyframes sxt-play-anim-saving {
+            100% {
+            background-position: -14750px; } }
+            .backpack.dropzone.saved .title::before {
+            content: 'Saved to'; }
+            .backpack.dropzone.saved .animation {
+            background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saved.png") left center;
+            animation: sxt-play-anim-saved steps(20) 0.83s forwards; }
+            @keyframes sxt-play-anim-saved {
+            100% {
+            background-position: -5000px; } }
+        </style>
+        
+    </head>
+    <body data-gr-c-s-loaded="true">
+        <!-- ngView: -->
+        <!-- ngView: --><ng-view class="ng-scope"><div class="wrapper ng-scope">
+    <div sp-header="" class="ng-isolate-scope"><div class="header-box">
+    <header id="header" class="header-box__header header" ng-class="{&#39;is-open&#39;:isOpen, &#39;is-fixed&#39;:isFixed, &#39;is-show&#39;:isShow}" style="display: none;">
+        <div class="header__inner inner"><img src="./TISS Offerings_files/TISS_website_logo_v3.png" width="130">    </div></header>
+</div></div>
+
+    <section class="mitre-page ng-scope" ng-controller="IndexController">
+        <div class="mitre-page__inner inner">
+            <div class="mitre-page__wrap">
+                <div class="mitre-page__row">
+                    <div class="mitre-page__col mitre-page__col--left">
+                        <ul class="fast-search-nav">
+                            <li class="fast-search-nav__item">
+                                <a class="fast-search-nav__link fast-search-nav__link--first is-active" ng-class="{&#39;is-active&#39;: fastSearch.selected == &#39;All&#39;}" ng-click="fastSearch.selected = &#39;All&#39;; refreshSearch();">All</a>
+                            </li>
+                            <!-- ngRepeat: (oneFilterName, oneFilter) in fastSearch.list --><li class="fast-search-nav__item ng-scope" ng-repeat="(oneFilterName, oneFilter) in fastSearch.list">
+                                <a class="fast-search-nav__link ng-binding" ng-class="{&#39;is-active&#39;: fastSearch.selected == oneFilterName}" ng-click="fastSearch.selected = oneFilterName; refreshSearch();">Phishing TTP</a>
+                            </li><!-- end ngRepeat: (oneFilterName, oneFilter) in fastSearch.list --><li class="fast-search-nav__item ng-scope" ng-repeat="(oneFilterName, oneFilter) in fastSearch.list">
+                                <a class="fast-search-nav__link ng-binding" ng-class="{&#39;is-active&#39;: fastSearch.selected == oneFilterName}" ng-click="fastSearch.selected = oneFilterName; refreshSearch();">Zoom</a>
+                            </li><!-- end ngRepeat: (oneFilterName, oneFilter) in fastSearch.list --><li class="fast-search-nav__item ng-scope" ng-repeat="(oneFilterName, oneFilter) in fastSearch.list">
+                                <a class="fast-search-nav__link ng-binding" ng-class="{&#39;is-active&#39;: fastSearch.selected == oneFilterName}" ng-click="fastSearch.selected = oneFilterName; refreshSearch();">Work From Home</a>
+                            </li><!-- end ngRepeat: (oneFilterName, oneFilter) in fastSearch.list --><li class="fast-search-nav__item ng-scope" ng-repeat="(oneFilterName, oneFilter) in fastSearch.list">
+                                <a class="fast-search-nav__link ng-binding" ng-class="{&#39;is-active&#39;: fastSearch.selected == oneFilterName}" ng-click="fastSearch.selected = oneFilterName; refreshSearch();">Panda APT</a>
+                            </li><!-- end ngRepeat: (oneFilterName, oneFilter) in fastSearch.list --><li class="fast-search-nav__item ng-scope" ng-repeat="(oneFilterName, oneFilter) in fastSearch.list">
+                                <a class="fast-search-nav__link ng-binding" ng-class="{&#39;is-active&#39;: fastSearch.selected == oneFilterName}" ng-click="fastSearch.selected = oneFilterName; refreshSearch();">Bear APT</a>
+                            </li><!-- end ngRepeat: (oneFilterName, oneFilter) in fastSearch.list -->
+                        </ul>
+                    </div>
+                    <div class="mitre-page__col mitre-page__col--right">
+                        <div class="search-box__row">
+                            <div class="search-box__control">
+                                <input autocomplete="off" class="search-box__input ng-pristine ng-untouched ng-valid ng-empty" name="search" ng-model="searchString" placeholder="Search .." type="text">
+                                                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mitre-box">
+                    <div class="mitre-box__row">
+                        <div class="mitre-box__col mitre-box__col--tactics">
+                            <div class="tactics-box">
+                                <h4 class="tactics-box__title mitre-title ng-binding">
+                                    Domain (3)
+                                </h4>
+                                <div class="tactics-list-wrap">
+                                    <div class="tactics-list-wrap__item">
+                                        <a class="tactics-list-wrap__link ng-binding" ng-click="oneTacticIsOpen = true">
+                                            Security Accessment
+                                            <span class="tactics-list-wrap__count ng-binding">
+                                            10 tecnhigues
+                                        </span>
+                                        </a>
+                                        <div class="tactics-list-wrap__arrow" style="background-image: url(./assets/images/arrow-down-select.svg)"></div>
+                                    </div>
+                                    <div class="tactics-list-wrap__modal" ng-class="{&#39;is-open&#39;:oneTacticIsOpen}">
+                                        <div class="tactics-list-wrap__modal-header">
+                                            <h4 class="tactics-list-wrap__modal-title">
+                                                CHOOSE TACTICS
+                                            </h4>
+                                            <button class="tactics-list-wrap__modal-close" ng-click="setOneTacticIsOpen(false);">
+                                                <svg fill="none" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+                                                    <path clip-rule="evenodd" d="M2.56066 0.439339C1.97487 -0.146446 1.02513 -0.146446 0.439339 0.439339C-0.146446 1.02513 -0.146446 1.97487 0.439339 2.56066L6.87868 9L0.439358 15.4393C-0.146428 16.0251 -0.146428 16.9749 0.439358 17.5606C1.02514 18.1464 1.97489 18.1464 2.56068 17.5606L9 11.1213L15.4393 17.5606C16.0251 18.1464 16.9749 18.1464 17.5606 17.5606C18.1464 16.9749 18.1464 16.0251 17.5606 15.4393L11.1213 9L17.5607 2.56066C18.1464 1.97487 18.1464 1.02513 17.5607 0.439339C16.9749 -0.146446 16.0251 -0.146446 15.4393 0.439339L9 6.87868L2.56066 0.439339Z" fill="white" fill-rule="evenodd"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="tactics-list">
+                                            <!-- ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu --><div class="tactics-list__item ng-scope" ng-repeat="(oneTacticId, oneTactic) in tacticsTechniquesMenu">
+                                                <a class="tactics-list__link ng-binding is-active" ng-class="{&#39;is-active&#39;: oneTacticId == selectedTactic}" ng-click="switchCurrentTactic(oneTacticId); setOneTacticIsOpen(false);">
+                                                    Security Accessment
+                                                    <span class="tactics-list__count ng-binding">10 techniques</span>
+                                                </a>
+                                            </div><!-- end ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu --><div class="tactics-list__item ng-scope" ng-repeat="(oneTacticId, oneTactic) in tacticsTechniquesMenu">
+                                                <a class="tactics-list__link ng-binding" ng-class="{&#39;is-active&#39;: oneTacticId == selectedTactic}" ng-click="switchCurrentTactic(oneTacticId); setOneTacticIsOpen(false);">
+                                                    Security Operations Center
+                                                    <span class="tactics-list__count ng-binding">8 techniques</span>
+                                                </a>
+                                            </div><!-- end ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu --><div class="tactics-list__item ng-scope" ng-repeat="(oneTacticId, oneTactic) in tacticsTechniquesMenu">
+                                                <a class="tactics-list__link ng-binding" ng-class="{&#39;is-active&#39;: oneTacticId == selectedTactic}" ng-click="switchCurrentTactic(oneTacticId); setOneTacticIsOpen(false);">
+                                                    Digital Forensices
+                                                    <span class="tactics-list__count ng-binding">19 techniques</span>
+                                                </a>
+                                            </div><!-- end ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mitre-box__col mitre-box__col--technique">
+                            <div class="technique-box">
+                                <h4 class="technique-box__title mitre-title ng-binding">
+                                    Skills  (10)
+                                </h4>
+                                <div class="technique-list">
+                                    <!-- ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children --><div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                        <a class="technique-list__link is-active" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                            <h4 class="technique-list__title ng-binding">OS Pentest </h4>
+                                            <div class="list-count">
+                                                <div class="list-count__row">
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Rules</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Examples</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Subtechniques</div>
+                                                        <div class="list-count__number ng-binding">3</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children --><div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                        <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                            <h4 class="technique-list__title ng-binding">Web App Pentest</h4>
+                                            <div class="list-count">
+                                                <div class="list-count__row">
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Rules</div>
+                                                        <div class="list-count__number ng-binding">7</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Examples</div>
+                                                        <div class="list-count__number ng-binding">5</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Subtechniques</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children --><div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                        <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                            <h4 class="technique-list__title ng-binding">Mobile App</h4>
+                                            <div class="list-count">
+                                                <div class="list-count__row">
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Rules</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Examples</div>
+                                                        <div class="list-count__number ng-binding">11</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Subtechniques</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children --><div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                        <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                            <h4 class="technique-list__title ng-binding">Network Pentest</h4>
+                                            <div class="list-count">
+                                                <div class="list-count__row">
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Rules</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Examples</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Subtechniques</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children --><div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                        <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                            <h4 class="technique-list__title ng-binding">Application Pentest</h4>
+                                            <div class="list-count">
+                                                <div class="list-count__row">
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Rules</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Examples</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Subtechniques</div>
+                                                        <div class="list-count__number ng-binding">3</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children --><div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                        <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                            <h4 class="technique-list__title ng-binding">Wireless Pentest</h4>
+                                            <div class="list-count">
+                                                <div class="list-count__row">
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Rules</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Examples</div>
+                                                        <div class="list-count__number ng-binding">12</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Subtechniques</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children --><div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                        <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                            <h4 class="technique-list__title ng-binding">Hardware Pentest</h4>
+                                            <div class="list-count">
+                                                <div class="list-count__row">
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Rules</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Examples</div>
+                                                        <div class="list-count__number ng-binding">1</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Subtechniques</div>
+                                                        <div class="list-count__number ng-binding">3</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children --><div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                        <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                            <h4 class="technique-list__title ng-binding">Embedded Pentest</h4>
+                                            <div class="list-count">
+                                                <div class="list-count__row">
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Rules</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Examples</div>
+                                                        <div class="list-count__number ng-binding">2</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Subtechniques</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children --><div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                        <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                            <h4 class="technique-list__title ng-binding">loT Pentest</h4>
+                                            <div class="list-count">
+                                                <div class="list-count__row">
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Rules</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Examples</div>
+                                                        <div class="list-count__number ng-binding">2</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Subtechniques</div>
+                                                        <div class="list-count__number ng-binding">0</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children --><div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                        <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                            <h4 class="technique-list__title ng-binding">ICS Pentest</h4>
+                                            <div class="list-count">
+                                                <div class="list-count__row">
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Rules</div>
+                                                        <div class="list-count__number ng-binding">8</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Examples</div>
+                                                        <div class="list-count__number ng-binding">24</div>
+                                                    </div>
+                                                    <div class="list-count__col">
+                                                        <div class="list-count__text">Subtechniques</div>
+                                                        <div class="list-count__number ng-binding">4</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mitre-box__col mitre-box__col--content" ng-class="{&#39;is-open&#39;:oneTechniqueIsOpen}">
+             <h4 class="content-box__title" style="font-weight:600; font-size:14px"> TACTICS</h4>               <div class="content-box">
+                                <div class="back-btn">
+                                    <button class="back-btn__btn" ng-click="oneTechniqueIsOpen = false">
+                                        <span class="back-btn__icon"><svg fill="none" height="12" viewBox="0 0 12 12" width="12" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.20711 0.770084C5.81658 0.364521 5.18342 0.364521 4.79289 0.770084L0.292893 5.44338C-0.0976315 5.84894 -0.0976315 6.50649 0.292893 6.91205L4.79289 11.5853C5.18342 11.9909 5.81658 11.9909 6.20711 11.5853C6.59763 11.1798 6.59763 10.5222 6.20711 10.1167L3.41421 7.21623H11C11.5523 7.21623 12 6.75127 12 6.17772C12 5.60416 11.5523 5.13921 11 5.13921H3.41421L6.20711 2.23876C6.59763 1.8332 6.59763 1.17565 6.20711 0.770084Z" fill="#EE3523" fill-rule="evenodd"></path></svg></span>
+                                        <span class="back-btn__text">BACK</span>
+                                    </button>
+                                </div>
+                                <div curr-url="currUrl" sp-content-one-technique="" sub-technique-id="selectedSubTechnique" technique="tacticsTechniquesMenu[selectedTactic].children[selectedTechnique]" class="ng-isolate-scope"><div class="content-box__wrap">
+    <div class="content-box__scroll">
+        <h2 class="content-box__title ng-binding">OS Pentest </h2>
+        <div class="content-box__select" ng-show="showTechniqueSelector(currentTechnique.children)">
+            <div class="select">
+                <label class="select__label">
+                    Choose subtechnique
+                </label>
+                <div allow-clear="false" dropdown-css-class="custom-select-dropdown" hide-search="true" items="currentTechnique.children" placeholder="Choose Sub Technique" select-id="choose-sub-technique" select-name="choose-sub-technique" selected="currentSubTechnique.id" sp-select2="" tags="true" class="ng-isolate-scope"><div id="choose-sub-technique-wrap">
+    <select class="select__init ng-pristine ng-untouched ng-valid ng-not-empty select2-hidden-accessible" name="choose-sub-technique" ng-model="selected" id="choose-sub-technique" data-select2-id="choose-sub-technique" tabindex="-1" aria-hidden="true">
+        <option value=""></option>
+        <!-- ngRepeat: (value, name) in items --><option ng-repeat="(value, name) in items" value="T1566" class="ng-binding ng-scope" selected="selected" data-select2-id="9">Core technique</option><!-- end ngRepeat: (value, name) in items --><option ng-repeat="(value, name) in items" value="T1566-001" class="ng-binding ng-scope">Initial Access</option><!-- end ngRepeat: (value, name) in items --><option ng-repeat="(value, name) in items" value="T1566-002" class="ng-binding ng-scope">Execution</option><!-- end ngRepeat: (value, name) in items --><option ng-repeat="(value, name) in items" value="T1566-003" class="ng-binding ng-scope">Persistence</option><!-- end ngRepeat: (value, name) in items -->
+    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="8" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-choose-sub-technique-container"><span class="select2-selection__rendered" id="select2-choose-sub-technique-container" role="textbox" aria-readonly="true" title="Core technique">Core technique</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+</div></div>
+            </div>
+        </div>
+        <!-- ngIf: !currentSubTechnique.errorDataLoad -->
+    </div>
+</div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                           </div>
+        </div>
+    </section>
+
+    <div sp-footer="" class="ng-isolate-scope">
+</div>
+</div>
+</ng-view><iframe id="intercom-frame" style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important; pointer-events: none;" aria-hidden="true" tabindex="-1" title="Intercom" src="./TISS Offerings_files/saved_resource.html"></iframe>
+        <!-- GA -->
+        <script async="" src="./TISS Offerings_files/js"></script>
+        
+        <script type="text/javascript" src="./TISS Offerings_files/app.da4249b5215613698906.js.download"></script>
+        
+        
+    
+</body></html>
