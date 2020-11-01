@@ -43,6 +43,10 @@
          h6{font-family:Open Sans, sans-serif; font-weight:800; }
          #sp-top-bar{ background-color:#fafafa;color:#666666; }
          #sp-bottom{ background-color:#ffffff;padding:100px 0px; }
+		 a:hover, a:focus, a:active {
+		text-decoration: none;
+		color: red !important;
+		}
       </style>
       <script type="application/json" class="joomla-script-options loaded">{"csrf.token":"8fcf6d40d5f66974c4d6f9149e187afb","system.paths":{"root":"\/inco","base":"\/inco"}}</script>
       <script src="./jquery.min.js.download" type="text/javascript"></script>
@@ -132,24 +136,26 @@ body {
   font-family: "Open Sans", "Arial";
 }
 main {
-	max-width: 800px;
-	margin: 30px auto;
+  max-width: 800px;
+  margin: 30px auto;
 	background: #3F3F3D;
 	padding: 30px;
 	box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 }
 input[name=css-tabs] {
-	display: none;
+  display: none;
 }
 a {
 	color: #F29A77;
 }
 #tabs {
-	padding: 0 0 0 0px;
-	width: calc(100%);
-	margin-left: 0px;
+	padding: 0 0 0 50px;
+	width: calc(100% + 50px);
+	margin-left: -50px;
 	background: #ffffff;
 	height: 80px;
+	border-bottom: 5px solid red;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 }		
 #tabs::before {
 	content: "";
@@ -158,10 +164,10 @@ a {
 	z-index: -100;
 	width: 100%;
 	left: 0;
-	margin-top: 5px;
+	margin-top: 16px;
 	height: 80px;
 	background: #2B2A28;
-	border-bottom: 5px solid #f7f7f7;
+	border-bottom: 5px solid red;
 }
 #tabs::after {
 	content: "";
@@ -170,7 +176,7 @@ a {
 	z-index: 0;
 	height: 80px;
 	width: 102px;
-	background: #f7f7f7;
+	background: red;
 	transition: transform 400ms;
 }
 #tabs label {
@@ -201,16 +207,16 @@ a {
 	margin: 10px auto;
 }
 #tab1::before {
-	background-image: url(brands/Predict-red.png);
+	background-image: url(Predicticons.png);
 }
 #tab2::before {
-	background-image: url(brands/Prevent-red.png);
+	background-image: url(Preventicons.png);
 }
 #tab3::before {
-	background-image: url(brands/Respond-red.png);
+	background-image: url(Respondicons.png);
 }
 #tab4::before {
-	background-image: url(brands/Detect-red.png);
+	background-image: url(Detecticons.png);
 }
 #radio1:checked ~ #tabs #tab1::before, #radio2:checked ~ #tabs #tab2::before, #radio3:checked ~ #tabs #tab3::before, #radio4:checked ~ #tabs #tab4::before {
 	filter: invert(100%);
@@ -239,7 +245,8 @@ a {
 	width: 0;
 	height: 0;
 	margin-left: -50px;
-
+	border-top: 8px solid #000;
+	border-right: 10px solid #000;
 	border-left: 10px solid transparent;
 	border-bottom: 8px solid transparent;
 }
@@ -270,14 +277,10 @@ width:50%;
 margin:2%
 
 }
-a:hover, a:focus, a:active {
-		text-decoration: none;
-		color: red !important;
-		}
 
 </style>
    </head>
-   <body class="site com-sppagebuilder view-page no-layout no-task itemid-437 en-gb ltr  layout-fluid off-canvas-menu-init" onload="document.getElementById('content').style.height = '400';">
+   <body class="site com-sppagebuilder view-page no-layout no-task itemid-437 en-gb ltr  layout-fluid off-canvas-menu-init">
       <div class="body-wrapper">
          <div class="body-innerwrapper">
             <section id="sp-top-bar" class="hidden hidden-xs hidden-sm hidden-md">
@@ -313,7 +316,7 @@ a:hover, a:focus, a:active {
                   </div>
                </div>
             </section>
- <header id="sp-header">
+            <header id="sp-header">
                <div class="container">
                   <div class="row" style="position: relative;">
                      <div id="sp-logo" class="col-xs-8 col-sm-3 col-md-3">
@@ -506,7 +509,8 @@ a:hover, a:focus, a:active {
                      </div>
                   </div>
                </div>
-            </header>            <section id="sp-page-title">
+            </header>
+            <section id="sp-page-title">
                <div class="row">
                   <div id="sp-title" class="col-sm-12 col-md-12">
                      <div class="sp-column "></div>
@@ -531,8 +535,8 @@ a:hover, a:focus, a:active {
  -->		
 
 
-   <video width="100%" height="auto" poster="bannerPoster.png" autoplay muted loop>
-  <source src="bannervideo.webm" type="video/mp4">
+   <video width="100%" height="auto" autoplay muted>
+  <source src="bannervideo.webm" type="video/mp4"> 
   <source src="bannervideo.webm" type="video/ogg">
   
   Your browser does not support the video tag.
@@ -1092,592 +1096,28 @@ function enableAutoplay() {
 																
 																
 																
-																<input id="radio1" type="radio" name="css-tabs" checked onclick="document.getElementById('content').style.height = '40 	0';">
-																<input id="radio2" type="radio" name="css-tabs" onclick="document.getElementById('content').style.height = '820';">
-																<input id="radio3" type="radio" name="css-tabs" onclick="document.getElementById('content').style.height = '650';">
-																<input id="radio4" type="radio" name="css-tabs"  onclick="document.getElementById('content').style.height = '600';">
+																<input id="radio1" type="radio" name="css-tabs" checked>
+																<input id="radio2" type="radio" name="css-tabs">
+																<input id="radio3" type="radio" name="css-tabs">
+																<input id="radio4" type="radio" name="css-tabs">
 																<div id="tabs">
 																	<label id="tab1" for="radio1">Predict</label>
 																	<label id="tab2" for="radio2">Prevent</label>
 																	<label id="tab3" for="radio3">Detect</label>
 																	<label id="tab4" for="radio4">Respond</label>
 																</div>
-																<div id="content" style="margin-bottom:70px">
+																<div id="content">
 																	<section id="content1">
-																	<div class="sppb-row" style="margin-top:40px;">
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341530" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341530" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="400ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 400ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/Rapid7.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Unified Vulnerability Management</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341538" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341538" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="200ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 200ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/kaspersky.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Threat Intelligence</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341549" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341549" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" style="visibility: visible; animation-duration: 700ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/TSAS.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Vulnerability Assessment</h3>
-                                                            <div class="sppb-addon-text" style="display:none">----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-									   </div>
-
-<div class="sppb-row" style="margin-top:40px;margin-bottom:40px;">
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341530" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341530" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="400ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 400ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/TSAS.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Security Assessment</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341538" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341538" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="200ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 200ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/Rapid7.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Penetration Testing Tools</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341549" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341549" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" style="visibility: visible; animation-duration: 700ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/Cydea-Threat-Intelligence-Platform.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Threat Intelligence Platform</h3>
-                                                            <div class="sppb-addon-text" style="display:none">----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-									   </div>
-
-
-
-
+																	<img src="Predict.png" class="pic"  />
 																	</section>
 																	<section id="content2">
-																	<div class="sppb-row" style="margin-top:40px;">
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341530" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341530" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="400ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 400ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/CISCO.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">DNS Security</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341538" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341538" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="200ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 200ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/IBM.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">MDM (Mobile Device Management)</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341549" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341549" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" style="visibility: visible; animation-duration: 700ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/IBM.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">PAM (Privileged Access Management)</h3>
-                                                            <div class="sppb-addon-text" style="display:none">----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-									   </div>
-
-<div class="sppb-row" style="margin-top:40px;margin-bottom:40px;">
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341530" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341530" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="400ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 400ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/Forcepoint.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">DLP (Data Loss Prevention)</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341538" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341538" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="200ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 200ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/kaspersky.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Endpoint Security & Patch Management</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341549" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341549" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" style="visibility: visible; animation-duration: 700ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/kaspersky.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Hybrid Cloud Security</h3>
-                                                            <div class="sppb-addon-text" style="display:none">----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-									   </div>
-									   
-									   
-									   
-									   
-									   
-									   
-									   	<div class="sppb-row" style="margin-top:40px;">
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341530" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341530" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="400ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 400ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/kaspersky.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Security for Mail Server</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341538" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341538" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="200ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 200ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/kaspersky.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Security for Internet Gateway</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341549" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341549" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" style="visibility: visible; animation-duration: 700ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/kaspersky.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Security for Storage</h3>
-                                                            <div class="sppb-addon-text" style="display:none">----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-									   </div>
-
-<div class="sppb-row" style="margin-top:40px;margin-bottom:40px;">
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341530" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341530" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="400ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 400ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/Forcepoint.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">NGF (Next Generation Firewall)</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                                                          
-									   </div>
-																
+																	<img src="Prevent.png" class="pic"  />
 																	</section>
 																	<section id="content3">
-																		<div class="sppb-row" style="margin-top:40px;">
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341530" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341530" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="400ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 400ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/IBM.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">SlEM (Security Information and Event Management)</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341538" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341538" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="200ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 200ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/IBM.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">DAM (Database Activity Monitoring)</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341549" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341549" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" style="visibility: visible; animation-duration: 700ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/kaspersky.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Sandbox</h3>
-                                                            <div class="sppb-addon-text" style="display:none">----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-									   </div>
-
-<div class="sppb-row" style="margin-top:40px;margin-bottom:40px;">
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341530" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341530" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="400ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 400ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/kaspersky.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Anti-Targeted Attack Platform</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341538" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341538" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="200ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 200ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/CISCO.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Network & Cloud Threat Detection</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341549" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341549" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" style="visibility: visible; animation-duration: 700ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/CISCO.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Identity Service Engine</h3>
-                                                            <div class="sppb-addon-text" style="display:none">----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-									   </div>
-									   	<div class="sppb-row" style="margin-top:40px;">
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341530" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341530" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="400ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 400ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/NNT.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">File Integirty Monitoring</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341538" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341538" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="200ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 200ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/Cydea-deception-Platform.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">DDP (Distributed Deception Platform)</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-									   </div>
-
-									   
+																	<img src="Detect.png" class="pic" />
 																	</section>
 																	<section id="content4">
-	<div class="sppb-row" style="margin-top:40px;">
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341530" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341530" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="400ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 400ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/IBM.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">SOAR (Security Orchestration Automation & Response)</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341538" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341538" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="200ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 200ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/kaspersky.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">EDR (Endpoint Detection & Response)</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341549" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341549" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" style="visibility: visible; animation-duration: 700ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/kaspersky.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Threat Management</h3>
-                                                            <div class="sppb-addon-text" style="display:none">----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-									   </div>
-
-<div class="sppb-row" style="margin-top:40px;margin-bottom:40px;">
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341530" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341530" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="400ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 400ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/CISCO.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">AMP (Advanced Malware Protection)</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341538" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341538" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" data-sppb-wow-delay="200ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 200ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/TSOC.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Compromise Assessment</h3>
-                                                            <div class="sppb-addon-text" style="display:none">-----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="sppb-col-md-4" id="column-wrap-id-1489319341527">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341549" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341549" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" style="visibility: visible; animation-duration: 700ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/TSOC.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Digital Forensics</h3>
-                                                            <div class="sppb-addon-text" style="display:none">----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-									                                          <div class="sppb-col-md-4" id="column-wrap-id-1489319341527" style="margin-top:30px">
-                                          <div id="column-id-1489319341527" class="sppb-column rounded">
-                                             <div class="sppb-column-addons">
-                                                <div id="sppb-addon-wrapper-1489319341549" class="sppb-addon-wrapper">
-                                                   <div id="sppb-addon-1489319341549" class=" sppb-wow fadeInRight clearfix  sppb-animated sppb-animated" data-sppb-wow-duration="700ms" style="visibility: visible; animation-duration: 700ms;">
-                                                      <div class="sppb-addon sppb-addon-feature sppb-text-center ">
-                                                         <div class="sppb-addon-content">
-                                                            <div class="sppb-icon"><span class="sppb-icon-container"><img src="brands/TSOC.png"></span></div>
-                                                            <h3 class="sppb-addon-title sppb-feature-box-title">Incident Response</h3>
-                                                            <div class="sppb-addon-text" style="display:none">----------------</div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-									   </div>
+																	<img src="Respond.png" class="pic" />
 																	</section>
 																</div>
 																
@@ -2213,7 +1653,7 @@ resource and knowledge base in the entire region.
                   </div>
                </div>
             </div>
-                     <div class="sp-module ">
+            <div class="sp-module ">
                <div class="sp-module-content">
                   <ul class="nav menu">
                      <li class="item-437  current active deeper parent">

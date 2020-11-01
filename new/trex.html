@@ -110,7 +110,10 @@ h3.sppb-addon-title {
     color: white !important;
 }
 
-
+a:hover, a:focus, a:active {
+		text-decoration: none;
+		color: red !important;
+		}
 
         </style>
         <script type="application/json" class="joomla-script-options loaded">{"csrf.token":"0fa82905640a25d167c2fe460a195012","system.paths":{"root":"\/inco","base":"\/inco"}}</script>
@@ -286,203 +289,200 @@ h3.sppb-addon-title {
                         </div>
                     </div>
                 </section>
-                <header id="sp-header">
-                    <div class="container">
-                        <div class="row" style="position: relative;">
-                            <div id="sp-logo" class="col-xs-8 col-sm-3 col-md-3">
-                                <div class="sp-column ">
-                                    <div class="logo"><a href="/inco/"><img style="border:none" class="sp-default-logo" src="https://infosecurity.com.pk/templates/jux_one/images/themes/red/inner-page-header-logo.png" alt="inco"></a></div>
-                                </div>
-                            </div>
-                            <div id="sp-menu" class="col-xs-4 col-sm-8 col-md-8" style="position: static;">
-                                <div class="sp-column ">
-                                    <div class="sp-megamenu-wrapper">
-                                        <a id="offcanvas-toggler" class="visible-sm visible-xs" href="#"><i class="fa fa-bars"></i></a>
-                                        <ul class="sp-megamenu-parent menu-slide-down hidden-sm hidden-xs">
-                                            <li class="sp-menu-item sp-has-child">
-                                                <a href="/inco/index.php">Home</a>
-                                                <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;">
-                                                    <div class="sp-dropdown-inner">
-                                                        <ul class="sp-dropdown-items">
-                                                            <li class="sp-menu-item"><a href="/inco/index.php/home/home01">Home - 01</a></li>
-                                                            <li class="sp-menu-item"><a href="/inco/index.php/home/home02">Home - 02</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="sp-menu-item sp-has-child active">
-                                                <a href="#">Pages</a>
-                                                <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;">
-                                                    <div class="sp-dropdown-inner">
-                                                        <ul class="sp-dropdown-items">
-                                                            <li class="sp-menu-item sp-has-child active">
-                                                                <a href="#">Services</a>
-                                                                <div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 240px;">
-                                                                    <div class="sp-dropdown-inner">
-                                                                        <ul class="sp-dropdown-items">
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/pages/services/service-01">Service 01</a></li>
-                                                                            <li class="sp-menu-item current-item active"><a href="/inco/index.php/pages/services/service-02">Service 02</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li class="sp-menu-item sp-has-child">
-                                                                <a href="#">About</a>
-                                                                <div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 240px;">
-                                                                    <div class="sp-dropdown-inner">
-                                                                        <ul class="sp-dropdown-items">
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/pages/about/about-us-1">About us 1</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/pages/about/about-us-2">About us 2</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li class="sp-menu-item"><a href="/inco/index.php/pages/pricing">Pricing</a></li>
-                                                            <li class="sp-menu-item"><a href="/inco/index.php/pages/login-form">Login Form</a></li>
-                                                            <li class="sp-menu-item"><a href="/inco/index.php/component/404/?Itemid=488">404 Page</a></li>
-                                                            <li class="sp-menu-item"><a href="/inco/index.php/pages/registration-form">Registration Form</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="sp-menu-item sp-has-child">
-                                                <a href="/inco/index.php/portfolio">Portfolio</a>
-                                                <div class="sp-dropdown sp-dropdown-main sp-dropdown-mega sp-menu-center" style="width: 800px;left: -400px;">
-                                                    <div class="sp-dropdown-inner">
-                                                        <div class="row">
-                                                            <div class="col-sm-4">
-                                                                <ul class="sp-mega-group">
-                                                                    <li class="sp-menu-item sp-has-child">
-                                                                        <a class="sp-group-title" href="#">2 Columns</a>
-                                                                        <ul class="sp-mega-group-child sp-dropdown-items">
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/2-columns/default-rectangular">Default - Rectangular</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/2-columns/default-square">Default - Square</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/2-columns/gallery-square">Gallery - Square</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/2-columns/gallery-rectangular">Gallery - Rectangular</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/2-columns/gallery-no-space-rectangular">Gallery no space - Rectangular</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/2-columns/gallery-no-space-square">Gallery no space - Square</a></li>
-                                                                        </ul>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="col-sm-4">
-                                                                <ul class="sp-mega-group">
-                                                                    <li class="sp-menu-item sp-has-child">
-                                                                        <a class="sp-group-title" href="#">3 Columns</a>
-                                                                        <ul class="sp-mega-group-child sp-dropdown-items">
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/3-columns/default-square">Default - Square</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/3-columns/default-rectangular">Default - Rectangular</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/3-columns/gallery-square">Gallery - Square</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/3-columns/gallery-rectangular">Gallery - Rectangular</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/3-columns/gallery-no-space-square">Gallery no space - Square</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/3-columns/gallery-no-space-rectangular">Gallery no space - Rectangular</a></li>
-                                                                        </ul>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="col-sm-4">
-                                                                <ul class="sp-mega-group">
-                                                                    <li class="sp-menu-item sp-has-child">
-                                                                        <a class="sp-group-title" href="#">4 Columns</a>
-                                                                        <ul class="sp-mega-group-child sp-dropdown-items">
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/4-columns/default-rectangular">Default - Rectangular</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/4-columns/default-square">Default - Square</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/4-columns/gallery-rectangular">Gallery - Rectangular</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/4-columns/gallery-square">Gallery - Square</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/4-columns/gallery-no-space-rectangular">Gallery no space - Rectangular</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/portfolio/4-columns/gallery-no-space-square">Gallery no space - Square</a></li>
-                                                                        </ul>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="sp-menu-item sp-has-child">
-                                                <a href="/inco/index.php/blog">Blog</a>
-                                                <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;">
-                                                    <div class="sp-dropdown-inner">
-                                                        <ul class="sp-dropdown-items">
-                                                            <li class="sp-menu-item"><a href="/inco/index.php/blog/blog-with-right-sidebar">Blog With Right Sidebar</a></li>
-                                                            <li class="sp-menu-item"><a href="/inco/index.php/blog/blog-with-left-sidebar">Blog With Left Sidebar</a></li>
-                                                            <li class="sp-menu-item"><a href="/inco/index.php/blog/article-category-blog-2">Article Category Blog</a></li>
-                                                            <li class="sp-menu-item sp-has-child">
-                                                                <a href="#">Post Formats</a>
-                                                                <div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 240px;left: -240px;">
-                                                                    <div class="sp-dropdown-inner">
-                                                                        <ul class="sp-dropdown-items">
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/blog/post-formats/standard-post-format">Standard Post Format</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/blog/post-formats/video-post-format">Video Post Format</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/blog/post-formats/audio-post-format">Audio Post Format</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/blog/post-formats/gallery-post-format">Gallery Post Format</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/blog/post-formats/link-post-format">Link Post Format</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/blog/post-formats/quote-post-format">Quote Post Format</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/blog/post-formats/status-post-format">Status Post Format</a></li>
-                                                                            <li class="sp-menu-item"><a href="/inco/index.php/blog/post-formats/image-post-format">Image Post Format</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="sp-menu-item sp-has-child">
-                                                <a href="#">Contact</a>
-                                                <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;">
-                                                    <div class="sp-dropdown-inner">
-                                                        <ul class="sp-dropdown-items">
-                                                            <li class="sp-menu-item"><a href="/inco/index.php/contact/contact-1">Contact 01</a></li>
-                                                            <li class="sp-menu-item"><a href="/inco/index.php/contact/contact-2">Contact 02</a></li>
-                                                            <li class="sp-menu-item"><a href="/inco/index.php/contact/contact-3">Contact 03</a></li>
-                                                            <li class="sp-menu-item"><a href="/inco/index.php/contact/contact-4">Contact 04</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="sp-position1" class="col-sm-1 col-md-1">
-                                <div class="sp-column ">
-                                    <div class="sp-module ">
-                                        <div class="sp-module-content">
-                                            <div class="mod-sppagebuilder  sp-page-builder" data-module_id="110">
-                                                <div class="page-content">
-                                                    <div id="section-id-1490217533208" class="sppb-section sppb-hidden-sm sppb-hidden-xs">
-                                                        <div class="sppb-row-overlay"></div>
-                                                        <div class="sppb-container-inner">
-                                                            <div class="sppb-row">
-                                                                <div class="sppb-col-md-12" id="column-wrap-id-1490217533209">
-                                                                    <div id="column-id-1490217533209" class="sppb-column ">
-                                                                        <div class="sppb-column-addons">
-                                                                            <div id="sppb-addon-wrapper-1490217533212" class="sppb-addon-wrapper">
-                                                                                <div id="sppb-addon-1490217533212" class="clearfix ">
-                                                                                    <div class="sppb-addon sppb-addon-button-group sppb-text-right">
-                                                                                        <div class="sppb-addon-content"></div>
-                                                                                    </div>
-                                                                                    <style type="text/css">@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1490217533212 {}}@media (max-width: 767px) {#sppb-addon-1490217533212 {}}</style>
-                                                                                    <style type="text/css">#sppb-addon-1490217533212 .sppb-addon-content {margin: -5px;}#sppb-addon-1490217533212 .sppb-addon-content .sppb-btn {margin: 5px;}#sppb-addon-1490217533212 #btn-1490217533212.sppb-btn-primary{font-weight: bold;}</style>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <style type="text/css">.sp-page-builder .page-content #section-id-1588774203435{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}.sp-page-builder .page-content #section-id-1588773728515{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}.sp-page-builder .page-content #section-id-1490217533208{padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;}#column-id-1490217533209{padding-top:28px;padding-right:0;padding-bottom:0;padding-left:0;}</style>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+ <header id="sp-header">
+               <div class="container">
+                  <div class="row" style="position: relative;">
+                     <div id="sp-logo" class="col-xs-8 col-sm-3 col-md-3">
+                        <div class="sp-column ">
+                           <div class="logo"><a href="https://infosecurity.com.pk"><img class="sp-default-logo" src="https://infosecurity.com.pk/templates/jux_one/images/themes/red/inner-page-header-logo.png" alt="inco"></a></div>
                         </div>
-                    </div>
-                </header>
+                     </div>
+                     <div id="sp-menu" class="col-xs-4 col-sm-8 col-md-8" style="position: static;">
+                        <div class="sp-column ">
+                           <div class="sp-megamenu-wrapper">
+                              <a id="offcanvas-toggler" class="visible-sm visible-xs" href="#"><i class="fa fa-bars"></i></a>
+                              <ul class="sp-megamenu-parent menu-slide-down hidden-sm hidden-xs">
+                                 <li class="sp-menu-item  current-item active">
+                                    <a href="./index.html">Home</a>
+                                    <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="display:none">
+                                       <div class="sp-dropdown-inner">
+                                          <ul class="sp-dropdown-items">
+                                             <li class="sp-menu-item"><a href="./index.html">Home</a></li>
+                                             
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li class="sp-menu-item ">
+                                    <a href="./aboutus.html">About Us</a>
+                                    <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="display:none	">
+                                       <div class="sp-dropdown-inner">
+                                          <ul class="sp-dropdown-items">
+                                             <li class="sp-menu-item sp-has-child">
+                                                <a href="https://demo.themecanyon.org/inco/#">Services</a>
+                                                <div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 240px;">
+                                                   <div class="sp-dropdown-inner">
+                                                      <ul class="sp-dropdown-items">
+                                                         <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/pages/services/service-01">Service 01</a></li>
+                                                         <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/pages/services/service-02">Service 02</a></li>
+                                                      </ul>
+                                                   </div>
+                                                </div>
+                                             </li>
+                                             <li class="sp-menu-item sp-has-child">
+                                                <a href="https://demo.themecanyon.org/inco/#">About</a>
+                                                <div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 240px;">
+                                                   <div class="sp-dropdown-inner">
+                                                      <ul class="sp-dropdown-items">
+                                                         <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/pages/about/about-us-1">About us 1</a></li>
+                                                         <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/pages/about/about-us-2">About us 2</a></li>
+                                                      </ul>
+                                                   </div>
+                                                </div>
+                                             </li>
+                                             <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/pages/pricing">Pricing</a></li>
+                                             <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/pages/login-form">Login Form</a></li>
+                                             <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/component/404/?Itemid=488">404 Page</a></li>
+                                             <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/pages/registration-form">Registration Form</a></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li class="sp-menu-item sp-has-child">
+                                    <a href="./portfolio.html">Portfolio</a>
+                                    <div class="sp-dropdown sp-dropdown-main sp-dropdown-mega sp-menu-center" style="width: 800px;left: -400px;">
+                                       <div class="sp-dropdown-inner">
+                                          <div class="row">
+                                             <div class="col-sm-4">
+                                                <ul class="sp-mega-group">
+                                                   <li class="sp-menu-item sp-has-child">
+                                                      <a class="sp-group-title" href="./portfolio.html">Solutions</a>
+                                                      <ul class="sp-mega-group-child sp-dropdown-items">
+                                                         <li class="sp-menu-item"><a href="./kes.html">Kaspersky</a></li>
+                                                         <li class="sp-menu-item"><a href="./ibm.html">IBM</a></li>
+                                                         <li class="sp-menu-item"><a href="./forcePoint.html">FORCEPOINT</a></li>
+                                                         <li class="sp-menu-item"><a href="./rapid7.html">Rapid7</a></li>
+                                                         <li class="sp-menu-item"><a href="./cisco.html">Cisco</a></li>
+                                                         
+                                                      </ul>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                             <div class="col-sm-4">
+                                                <ul class="sp-mega-group">
+                                                   <li class="sp-menu-item sp-has-child">
+                                                      <a class="sp-group-title" href="./portfolio.html">Services</a>
+                                                      <ul class="sp-mega-group-child sp-dropdown-items">
+                                                         <li class="sp-menu-item"><a href="./socmss.html">TSOC - Managed Security</a></li>
+                                                         <li class="sp-menu-item"><a href="./compass.html">TSOC - Compromise Assessment</a></li>
+                                                         <li class="sp-menu-item"><a href="./soc.html">TSOC - Maturity Assessment</a></li>
+                                                         <li class="sp-menu-item"><a href="./tcon.html">TCON - Security Consultancy</a></li>
+                                                         <li class="sp-menu-item"><a href="./tsas.html">TSAS - Security Assessment</a></li>
+                                                         <li class="sp-menu-item"><a href="./redTeam.html">TSAS - Red Team Testing</a></li>
+                                                      </ul>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                             <div class="col-sm-4">
+                                                <ul class="sp-mega-group">
+                                                   <li class="sp-menu-item sp-has-child">
+                                                      <a class="sp-group-title" href="./portfolio.html">Trainings</a>
+                                                      <ul class="sp-mega-group-child sp-dropdown-items">
+                                                         <li class="sp-menu-item"><a href="./ecc.html">EC - Council</a></li>
+                                                         <li class="sp-menu-item"><a href="./trex.html">T - REX</a></li>
+                                                         <li class="sp-menu-item"><a href="./tsap.html">T - SAP</a></li>
+
+                                                      </ul>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li class="sp-menu-item " >
+                                    <a href="./lifeattiss.html">Life at TISS</a>
+                                    <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="display:none">
+                                       <div class="sp-dropdown-inner">
+                                          <ul class="sp-dropdown-items">
+                                             <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/blog/blog-with-right-sidebar">Blog With Right Sidebar</a></li>
+                                             <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/blog/blog-with-left-sidebar">Blog With Left Sidebar</a></li>
+                                             <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/blog/article-category-blog-2">Article Category Blog</a></li>
+                                             <li class="sp-menu-item sp-has-child">
+                                                <a href="https://demo.themecanyon.org/inco/#">Post Formats</a>
+                                                <div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 240px;left: -240px;">
+                                                   <div class="sp-dropdown-inner">
+                                                      <ul class="sp-dropdown-items">
+                                                         <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/standard-post-format">Standard Post Format</a></li>
+                                                         <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/video-post-format">Video Post Format</a></li>
+                                                         <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/audio-post-format">Audio Post Format</a></li>
+                                                         <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/gallery-post-format">Gallery Post Format</a></li>
+                                                         <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/link-post-format">Link Post Format</a></li>
+                                                         <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/quote-post-format">Quote Post Format</a></li>
+                                                         <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/status-post-format">Status Post Format</a></li>
+                                                         <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/image-post-format">Image Post Format</a></li>
+                                                      </ul>
+                                                   </div>
+                                                </div>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li class="sp-menu-item">
+                                    <a href="https://demo.themecanyon.org/inco/index.php/contact/contact-1">Contact</a>
+                                    <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="display:none">
+                                       <div class="sp-dropdown-inner">
+                                       <div class="sp-dropdown-inner">
+                                          <ul class="sp-dropdown-items">
+                                             <li class="sp-menu-item"><a href="https://demo.themecanyon.org/inco/index.php/contact/contact-1">Contact 01</a></li>
+                                             
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="sp-position1" class="col-sm-1 col-md-1">
+                        <div class="sp-column ">
+                           <div class="sp-module ">
+                              <div class="sp-module-content">
+                                 <div class="mod-sppagebuilder  sp-page-builder" data-module_id="110">
+                                    <div class="page-content">
+                                       <div id="section-id-1490217533208" class="sppb-section sppb-hidden-sm sppb-hidden-xs">
+                                          <div class="sppb-row-overlay"></div>
+                                          <div class="sppb-container-inner">
+                                             <div class="sppb-row">
+                                                <div class="sppb-col-md-12" id="column-wrap-id-1490217533209">
+                                                   <div id="column-id-1490217533209" class="sppb-column ">
+                                                      <div class="sppb-column-addons">
+                                                         <div id="sppb-addon-wrapper-1490217533212" class="sppb-addon-wrapper">
+                                                            <div id="sppb-addon-1490217533212" class="clearfix ">
+                                                               <div class="sppb-addon sppb-addon-button-group sppb-text-right">
+                                                                  <div style="display:none" class="sppb-addon-content"><a rel="noopener noreferrer" target="_blank" href="https://demo.themecanyon.org/inco/#" id="btn-1490217533212" class="sppb-btn  sppb-btn-primary sppb-btn-rounded">Explore</a></div>
+                                                               </div>
+                                                               <style type="text/css">@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1490217533212 {}}@media (max-width: 767px) {#sppb-addon-1490217533212 {}}</style>
+                                                               <style type="text/css">#sppb-addon-1490217533212 .sppb-addon-content {margin: -5px;}#sppb-addon-1490217533212 .sppb-addon-content .sppb-btn {margin: 5px;}#sppb-addon-1490217533212 #btn-1490217533212.sppb-btn-primary{font-weight: bold;}</style>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <style type="text/css">.sp-page-builder .page-content #section-id-1588774203435{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}.sp-page-builder .page-content #section-id-1588773728515{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}.sp-page-builder .page-content #section-id-1490217533208{padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;}#column-id-1490217533209{padding-top:28px;padding-right:0;padding-bottom:0;padding-left:0;}</style>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
                 <section id="sp-page-title">
                     <div class="row">
                         <div id="sp-title" class="col-sm-12 col-md-12">
@@ -1284,110 +1284,106 @@ We have a vast experience of conducting customized & public trainings.<br></div>
                         </div>
                     </div>
                 </div>
-                <div class="sp-module ">
-                    <div class="sp-module-content">
-                        <ul class="nav menu">
-                            <li class="item-437  current active deeper parent">
-                                <a href="https://demo.themecanyon.org/inco/index.php"> Home</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-437"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                                <ul class="collapse" id="collapse-menu-437">
-                                    <li class="item-556"><a href="https://demo.themecanyon.org/inco/index.php/home/home01"> Home - 01</a></li>
-                                    <li class="item-490"><a href="https://demo.themecanyon.org/inco/index.php/home/home02"> Home - 02</a></li>
-                                </ul>
-                            </li>
-                            <li class="item-279  deeper parent">
-                                <a href="https://demo.themecanyon.org/inco/#"> Pages</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-279"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                                <ul class="collapse" id="collapse-menu-279">
-                                    <li class="item-553  deeper parent">
-                                        <a href="https://demo.themecanyon.org/inco/#"> Services</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-553"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                                        <ul class="collapse" id="collapse-menu-553">
-                                            <li class="item-554"><a href="https://demo.themecanyon.org/inco/index.php/pages/services/service-01"> Service 01</a></li>
-                                            <li class="item-555"><a href="https://demo.themecanyon.org/inco/index.php/pages/services/service-02"> Service 02</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="item-545  deeper parent">
-                                        <a href="https://demo.themecanyon.org/inco/#"> About</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-545"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                                        <ul class="collapse" id="collapse-menu-545">
-                                            <li class="item-551"><a href="https://demo.themecanyon.org/inco/index.php/pages/about/about-us-1"> About us 1</a></li>
-                                            <li class="item-552"><a href="https://demo.themecanyon.org/inco/index.php/pages/about/about-us-2"> About us 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="item-558"><a href="https://demo.themecanyon.org/inco/index.php/pages/pricing"> Pricing</a></li>
-                                    <li class="item-402"><a href="https://demo.themecanyon.org/inco/index.php/pages/login-form"> Login Form</a></li>
-                                    <li class="item-488"><a href="https://demo.themecanyon.org/inco/index.php/component/404/?Itemid=488"> 404 Page</a></li>
-                                    <li class="item-405"><a href="https://demo.themecanyon.org/inco/index.php/pages/registration-form"> Registration Form</a></li>
-                                </ul>
-                            </li>
-                            <li class="item-502  deeper parent">
-                                <a href="https://demo.themecanyon.org/inco/index.php/portfolio"> Portfolio</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-502"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                                <ul class="collapse" id="collapse-menu-502">
-                                    <li class="item-568  deeper parent">
-                                        <a href="https://demo.themecanyon.org/inco/#"> 2 Columns</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-568"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                                        <ul class="collapse" id="collapse-menu-568">
-                                            <li class="item-571"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/2-columns/default-rectangular"> Default - Rectangular</a></li>
-                                            <li class="item-572"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/2-columns/default-square"> Default - Square</a></li>
-                                            <li class="item-573"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/2-columns/gallery-square"> Gallery - Square</a></li>
-                                            <li class="item-574"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/2-columns/gallery-rectangular"> Gallery - Rectangular</a></li>
-                                            <li class="item-576"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/2-columns/gallery-no-space-rectangular"> Gallery no space - Rectangular</a></li>
-                                            <li class="item-575"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/2-columns/gallery-no-space-square"> Gallery no space - Square</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="item-569  deeper parent">
-                                        <a href="https://demo.themecanyon.org/inco/#"> 3 Columns</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-569"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                                        <ul class="collapse" id="collapse-menu-569">
-                                            <li class="item-577"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/3-columns/default-square"> Default - Square</a></li>
-                                            <li class="item-578"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/3-columns/default-rectangular"> Default - Rectangular</a></li>
-                                            <li class="item-579"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/3-columns/gallery-square"> Gallery - Square</a></li>
-                                            <li class="item-580"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/3-columns/gallery-rectangular"> Gallery - Rectangular</a></li>
-                                            <li class="item-581"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/3-columns/gallery-no-space-square"> Gallery no space - Square</a></li>
-                                            <li class="item-582"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/3-columns/gallery-no-space-rectangular"> Gallery no space - Rectangular</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="item-570  deeper parent">
-                                        <a href="https://demo.themecanyon.org/inco/#"> 4 Columns</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-570"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                                        <ul class="collapse" id="collapse-menu-570">
-                                            <li class="item-583"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/4-columns/default-rectangular"> Default - Rectangular</a></li>
-                                            <li class="item-584"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/4-columns/default-square"> Default - Square</a></li>
-                                            <li class="item-585"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/4-columns/gallery-rectangular"> Gallery - Rectangular</a></li>
-                                            <li class="item-586"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/4-columns/gallery-square"> Gallery - Square</a></li>
-                                            <li class="item-587"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/4-columns/gallery-no-space-rectangular"> Gallery no space - Rectangular</a></li>
-                                            <li class="item-588"><a href="https://demo.themecanyon.org/inco/index.php/portfolio/4-columns/gallery-no-space-square"> Gallery no space - Square</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="item-278  deeper parent">
-                                <a href="https://demo.themecanyon.org/inco/index.php/blog"> Blog</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-278"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                                <ul class="collapse" id="collapse-menu-278">
-                                    <li class="item-492"><a href="https://demo.themecanyon.org/inco/index.php/blog/blog-with-right-sidebar"> Blog With Right Sidebar</a></li>
-                                    <li class="item-493"><a href="https://demo.themecanyon.org/inco/index.php/blog/blog-with-left-sidebar"> Blog With Left Sidebar</a></li>
-                                    <li class="item-504"><a href="https://demo.themecanyon.org/inco/index.php/blog/article-category-blog-2"> Article Category Blog</a></li>
-                                    <li class="item-503  deeper parent">
-                                        <a href="https://demo.themecanyon.org/inco/#"> Post Formats</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-503"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                                        <ul class="collapse" id="collapse-menu-503">
-                                            <li class="item-494"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/standard-post-format"> Standard Post Format</a></li>
-                                            <li class="item-495"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/video-post-format"> Video Post Format</a></li>
-                                            <li class="item-497"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/audio-post-format"> Audio Post Format</a></li>
-                                            <li class="item-496"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/gallery-post-format"> Gallery Post Format</a></li>
-                                            <li class="item-499"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/link-post-format"> Link Post Format</a></li>
-                                            <li class="item-501"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/quote-post-format"> Quote Post Format</a></li>
-                                            <li class="item-500"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/status-post-format"> Status Post Format</a></li>
-                                            <li class="item-498"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/image-post-format"> Image Post Format</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="item-546  deeper parent">
-                                <a href="https://demo.themecanyon.org/inco/#"> Contact</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-546"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                                <ul class="collapse" id="collapse-menu-546">
-                                    <li class="item-547"><a href="https://demo.themecanyon.org/inco/index.php/contact/contact-1"> Contact 01</a></li>
-                                    <li class="item-548"><a href="https://demo.themecanyon.org/inco/index.php/contact/contact-2"> Contact 02</a></li>
-                                    <li class="item-549"><a href="https://demo.themecanyon.org/inco/index.php/contact/contact-3"> Contact 03</a></li>
-                                    <li class="item-550"><a href="https://demo.themecanyon.org/inco/index.php/contact/contact-4"> Contact 04</a></li>
-                                </ul>
-                            </li>
+            <div class="sp-module ">
+               <div class="sp-module-content">
+                  <ul class="nav menu">
+                     <li class="item-437  current active deeper parent">
+                        <a href="./index.html"> Home</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-437"></span>
+                        <ul class="collapse" id="collapse-menu-437" style="display:none">
+                           <li class="item-556"><a href="https://demo.themecanyon.org/inco/index.php/home/home01"> Home - 01</a></li>
+                           <li class="item-490"><a href="https://demo.themecanyon.org/inco/index.php/home/home02"> Home - 02</a></li>
                         </ul>
-                    </div>
-                </div>
+                     </li>
+                     <li class="item-279  deeper parent">
+                        <a href="./aboutus.html"> About Us</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-279"></span>
+                        <ul class="collapse" id="collapse-menu-279" style="display:none	">
+                           <li class="item-553  deeper parent">
+                              <a href="https://demo.themecanyon.org/inco/#"> Services</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-553"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
+                              <ul class="collapse" id="collapse-menu-553">
+                                 <li class="item-554"><a href="https://demo.themecanyon.org/inco/index.php/pages/services/service-01"> Service 01</a></li>
+                                 <li class="item-555"><a href="https://demo.themecanyon.org/inco/index.php/pages/services/service-02"> Service 02</a></li>
+                              </ul>
+                           </li>
+                           <li class="item-545  deeper parent">
+                              <a href="https://demo.themecanyon.org/inco/#"> About</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-545"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
+                              <ul class="collapse" id="collapse-menu-545">
+                                 <li class="item-551"><a href="https://demo.themecanyon.org/inco/index.php/pages/about/about-us-1"> About us 1</a></li>
+                                 <li class="item-552"><a href="https://demo.themecanyon.org/inco/index.php/pages/about/about-us-2"> About us 2</a></li>
+                              </ul>
+                           </li>
+                           <li class="item-558"><a href="https://demo.themecanyon.org/inco/index.php/pages/pricing"> Pricing</a></li>
+                           <li class="item-402"><a href="https://demo.themecanyon.org/inco/index.php/pages/login-form"> Login Form</a></li>
+                           <li class="item-488"><a href="https://demo.themecanyon.org/inco/index.php/component/404/?Itemid=488"> 404 Page</a></li>
+                           <li class="item-405"><a href="https://demo.themecanyon.org/inco/index.php/pages/registration-form"> Registration Form</a></li>
+                        </ul>
+                     </li>
+                     <li class="item-502  deeper parent">
+                        <a href="./portfolio.html"> Portfolio</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-502"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
+                        <ul class="collapse" id="collapse-menu-502">
+                           <li class="item-568  deeper parent">
+                              <a href="./portfolio.html"> Solutions</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-568"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
+                              <ul class="collapse" id="collapse-menu-568">
+                                 <li class="item-571"><a href="./kes.html">Kaspersky</a></li>
+                                 <li class="item-572"><a href="./ibm.html">IBM</a></li>
+                                 <li class="item-573"><a href="./forcePoint.html">FORCEPOINT</a></li>
+                                 <li class="item-574"><a href="./rapid7.html">Rapid7</a></li>
+                                 <li class="item-576"><a href="./cisco.html">Cisco</a></li>
+                                
+                              </ul>                   
+                           </li>
+                           <li class="item-569  deeper parent">
+                              <a href="./portfolio.html"> Services</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-569"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
+                              <ul class="collapse" id="collapse-menu-569">
+                                 <li class="item-577"><a href="./socmss.html">TSOC - Managed Security</a></li>
+                                 <li class="item-578"><a href="./compass.html">TSOC - Compromise Assessment</a></li>
+                                 <li class="item-579"><a href="./soc.html">TSOC - Maturity Assessment</a></li>
+                                 <li class="item-580"><a href="./tcon.html">TCON - Security Consultancy</a></li>
+                                 <li class="item-581"><a href="./tsas.html">TSAS - Security Assessment</a></li>
+                                 <li class="item-582"><a href="./redTeam.html">TSAS - Red Team Testing</a></li>
+                              </ul>
+                           </li>
+                           <li class="item-570  deeper parent">
+                              <a href="./portfolio.html"> Trainings</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-570"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
+                              <ul class="collapse" id="collapse-menu-570">
+                                 <li class="item-583"><a href="./ecc.html">EC - Council</a></li>
+                                 <li class="item-584"><a href="./trex.html">T - REX</a></li>
+                                 <li class="item-585"><a href="./tsap.html">T - SAP</a></li>
+                                
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="item-278  deeper parent">
+                                                            <a href="./lifeattiss.html">Life at TISS</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-278"></span>
+                        <ul class="collapse" id="collapse-menu-278" style="display:none">
+                           <li class="item-492"><a href="https://demo.themecanyon.org/inco/index.php/blog/blog-with-right-sidebar"> Blog With Right Sidebar</a></li>
+                           <li class="item-493"><a href="https://demo.themecanyon.org/inco/index.php/blog/blog-with-left-sidebar"> Blog With Left Sidebar</a></li>
+                           <li class="item-504"><a href="https://demo.themecanyon.org/inco/index.php/blog/article-category-blog-2"> Article Category Blog</a></li>
+                           <li class="item-503  deeper parent">
+                              <a href="https://demo.themecanyon.org/inco/#"> Post Formats</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-503"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
+                              <ul class="collapse" id="collapse-menu-503">
+                                 <li class="item-494"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/standard-post-format"> Standard Post Format</a></li>
+                                 <li class="item-495"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/video-post-format"> Video Post Format</a></li>
+                                 <li class="item-497"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/audio-post-format"> Audio Post Format</a></li>
+                                 <li class="item-496"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/gallery-post-format"> Gallery Post Format</a></li>
+                                 <li class="item-499"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/link-post-format"> Link Post Format</a></li>
+                                 <li class="item-501"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/quote-post-format"> Quote Post Format</a></li>
+                                 <li class="item-500"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/status-post-format"> Status Post Format</a></li>
+                                 <li class="item-498"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/image-post-format"> Image Post Format</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="item-546  deeper parent">
+                        <a href="https://demo.themecanyon.org/inco/index.php/contact/contact-1"> Contact</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-546"></span>
+                        <ul class="collapse" id="collapse-menu-546" style="display:none">
+                           <li class="item-547"><a href="https://demo.themecanyon.org/inco/index.php/contact/contact-1"> Contact 01</a></li>
+
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
             </div>
             <!-- /.offcanvas-inner -->
         </div>
