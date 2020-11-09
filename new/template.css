@@ -140,6 +140,7 @@ textarea.form-control {
   display: block;
   padding: 0;
   position: relative;
+  width:135px;
 }
 .sp-megamenu-parent .sp-dropdown li.sp-menu-item >a,
 .sp-megamenu-parent .sp-dropdown li.sp-menu-item span {
@@ -147,7 +148,8 @@ textarea.form-control {
   padding: 5px 10px;
   color: #666;
   cursor: pointer;
-}
+width:135px;
+  }
 .sp-megamenu-parent .sp-dropdown li.sp-menu-item >a.sp-group-title,
 .sp-megamenu-parent .sp-dropdown li.sp-menu-item span.sp-group-title {
   text-transform: uppercase;
