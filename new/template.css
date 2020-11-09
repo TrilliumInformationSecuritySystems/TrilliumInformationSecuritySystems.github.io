@@ -106,7 +106,7 @@ textarea.form-control {
   list-style: none;
   padding: 0;
   margin: 0;
-/*   width:150px; */
+  width:135px; /* modified*/
 }
 .sp-megamenu-parent .sp-dropdown .sp-dropdown-items .sp-has-child>a:after {
   font-family: "Font Awesome 5 Brands";
